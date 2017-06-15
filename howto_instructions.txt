@@ -1,0 +1,16 @@
+Run promote scripts in this order:
+
+wfpt_user_create
+wfpt_create_db
+wfpt_user_grant
+
+test_data
+test_data_fact1
+test_data_fact2
+test_data_fact3
+test_data_fact4
+
+When finished, make sure that (scripts should do it):
+
+-user wfpt has user mapping set to wfpt
+-database wfpt has permissions set to connect, select, insert, update, delete and execute

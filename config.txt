@@ -1,0 +1,36 @@
+'-----------------------------------------
+' Database section
+'-----------------------------------------
+ENVIRONMENT=STG
+CONNECTION_LOC=Provider=SQLOLEDB;Data Source=PC1622\SQLEXPRESS;Initial Catalog=wfpt;User ID=wfpt;Password=W0rkFPT00!;
+CONNECTION_DEV=Provider=SQLOLEDB;Data Source=TEST-ODS01.test.aibcorp.net.au;Initial Catalog=wfpt;User ID=wfpt;Password=W0rkFPT00!;
+CONNECTION_TST=Provider=SQLOLEDB;Data Source=192.168.180.47;Initial Catalog=wfpt;User ID=wfpt;Password=W0rkFPT00!;
+CONNECTION_STG=Provider=SQLOLEDB;Data Source=172.29.30.48;Initial Catalog=wfpt;User ID=wfpt;Password=W0rkFPT00!;
+
+LOC_DW=STG
+CONNECTION_DW_DEV=Provider=SQLOLEDB;Data Source=TEST-ODS01.test.aibcorp.net.au;Initial Catalog=wfpt;User ID=wfpt;Password=W0rkFPT00!;
+CONNECTION_DW_TST=Provider=SQLOLEDB;Data Source=192.168.180.47;Initial Catalog=wfpt;User ID=wfpt;Password=W0rkFPT00!;
+CONNECTION_DW_STG=Provider=SQLOLEDB;Data Source=172.29.30.48;Initial Catalog=wfpt;User ID=wfpt;Password=W0rkFPT00!;
+DW_YN=YES
+
+'-----------------------------------------
+' GUI section
+'-----------------------------------------
+GRAPHICS=graphic\aib_header_long.JPG
+'-----------------------------------------
+' Prediction defaults
+'-----------------------------------------
+SC_CLASS_SIZE=20
+OLF_CLASS_SIZE=50
+SC_COHORT_SIZE=300
+
+'counter for staff deadline date(term_start_date+month)
+STAFF_DEADLINE_COUNT=-1
+
+'count for provision assessment release date (+weeks)
+ASSESSMENT_RELEASE_DATE=2
+
+'-----------------------------------------
+' Blob attachment file size in bytes
+'-----------------------------------------
+FILE_SIZE=1000000
